@@ -2,9 +2,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-rounded modal-content-shadow">
             <div class="modal-body">
-                <div class="close float-right">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @if(isset($edit)) onclick="location.href='/{{  Auth::user()->role() }}/missions'" @endif><span aria-hidden="true">&times;</span></button>
                 <div class="profile-sec">
                     <p class="profile-title">Ajouter une mission</p>
                 </div>

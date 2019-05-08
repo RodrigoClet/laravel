@@ -14174,8 +14174,8 @@ body {
   .card.card-profile .profile-avatar {
     border: 1px solid #999999;
     background-color: #ffffff;
-    height: 51px;
-    width: 51px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%; }
     .card.card-profile .profile-avatar.profile-avatar__sm {
       height: 24px;
@@ -14564,7 +14564,7 @@ select.form-control {
     font-size: 15px;
     border: none;
     height: 48px; 
-    float: right;}
+    margin: auto;}
 
 .btn.btn-grey {
   background-color: #707070;
@@ -14783,5 +14783,17 @@ button.close{
 
 input[type="date"] {
     border: 1px solid rgb(169, 169, 169);
+}
+
+.image-hld {
+  margin-top: 35%;
+}
+
+#newImageUploadTitle {
+    display: none;
+}
+
+.thumbnail-input {
+  display: none;
 }
 /*# sourceMappingURL=maps/style.css.map */

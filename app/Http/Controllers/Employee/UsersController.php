@@ -45,9 +45,9 @@ class UsersController extends Controller
           'thumb' => 'image|mimes:jpeg,png,jpg,gif'
       ]);
       //Image::configure(array('driver' => 'imagick'));
-        $img = Image::make(request()->file('thumb'))->resize(500, null, function ($constraint) {
+        $img = Image::make(request()->file('thumb'))->resize(45, null, function ($constraint) {
             $constraint->aspectRatio();
-        })->save('thumbnails/' . $random_name);
+        })->save('img/' . $random_name);
 
           Auth::user()->update(['image_name' => $random_name]);
 
@@ -63,8 +63,8 @@ class UsersController extends Controller
     function crop($x, $y, $with, $height){
         //Image::configure(array('driver' => 'imagick'));
         $random_name =  Auth::user()->id . uniqid() . '.jpg';
-        $img_url = public_path('thumbnails/');
-        $img = Image::make($img_url . Auth::user()->image_name)->crop($with, $height, $x, $y)->resize(145, 145)->save($img_url . $random_name);
+        $img_url = public_path('img/');
+        $img = Image::make($img_url . Auth::user()->image_name)->crop($with, $height, $x, $y)->resize(45, 45)->save($img_url . $random_name);
         Auth::user()->update(['image_name' => $random_name]);
         Session::flash('message', 'Détails de l\'utilisateur mis à jour avec succès!');
         return redirect('/' . Auth::user()->role());

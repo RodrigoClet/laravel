@@ -10,7 +10,8 @@
                     <div class="card card-profile">
                         <div class="card-body">
                             <div class="d-flex flex-row flex-wrap">
-                                <img class="profile-avatar justify-content-center align-self-center" src="{{ URL::asset('img') . '/' . $user->image_name }}" alt="avatar">
+                                <img class="profile-avatar justify-content-center align-self-center image-de-profil" id="blah" src="{{ URL::asset('img') . '/' . $user->image_name }}" alt="avatar">
+                                <input type="file" class="thumbnail-input" id="thumbnail-input" name="thumb">
                                 <div class="wrapper ml-4 profile-justify-width">
                                     <div class="profile-title d-flex">
                                         <p class="mr-5">{{ $user->name }} {{ $user->last_name }}</p>
@@ -120,6 +121,21 @@
 
           $('.form-check-input:checked + label').parent().parent().prev().text($('.form-check-input:checked + label').text());
           $('select option:selected').parent().prev().text($('select option:selected').text());
+        });
+
+        $('.image-de-profil').click(function () {
+          $('.thumbnail-input').click();
+        });
+  
+        $('.thumbnail-input').change(function () {
+                var file    = document.querySelector('input[type=file]').files[0];
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file);
+            
         });
     });
     </script>
