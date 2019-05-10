@@ -8118,7 +8118,7 @@ pre {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-md-3 {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     max-width: 25%; }
   .col-md-4 {
     flex: 0 0 33.33333%;
@@ -14724,6 +14724,14 @@ select.form-control {
         background-color: rgba(0,0,0,0.4);
     }
 
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
     .red-title{
         color: #d03e3f;
         font-weight: 600;
@@ -14795,5 +14803,105 @@ input[type="date"] {
 
 .thumbnail-input {
   display: none;
+}
+
+#template .modal-dialog{
+    width: 100%;
+    max-width: 1180px;
+}
+.wraper{
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    max-width: 260px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#template .modal-content{ max-width: 1080px; }
+.wrapper-img{
+    height: 220px;
+}
+.wrapper-img img{
+    margin: 0 auto;
+    max-height: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+
+.wrapper-button{
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer !important;
+}
+.details-btn{
+    float: right;
+    text-align: center;
+    padding: 5px 25px;
+    background-color: #e74178;
+    border-radius: 25px;
+    color: #ffffff !important;
+}
+.details-btn:hover,
+.details-btn:focus{ text-decoration: none; background-color: #e74178;
+    color: #ffffff !important;}
+
+.change-template-image {
+    width: 100% !important;
+}
+
+.display-image{
+    display:none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    background: rgba(100,100,100,0.4);
+}
+.display-image-wrapper{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.display-image-wrapper img{
+    margin:0 auto;
+    display: block;
+    width: auto;
+    max-width: 50%;
+}
+.display-image-wrapper .display-button{
+    position:relative;
+    width:70%;
+    margin:0 auto;
+    text-align:center;
+}
+.display-image-wrapper .display-button a.display-close{
+    position: absolute;
+    top: -76px;
+    right: 0;
+    color: #fff;
+    font-size: 50px;
+    opacity: 1;
+    font-weight: 700;
+}
+.display-image-wrapper .display-button .display-form{
+    bottom:-50px;
+    left:0;
+    right:0;
+    position:absolute;
+}
+.display-image-wrapper .display-button .display-form a{
+    padding: 15px 40px;
+     background-color: #e74178;
+    border-radius: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.template-img {
+    max-width: 50%;
 }
 /*# sourceMappingURL=maps/style.css.map */

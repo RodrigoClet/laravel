@@ -29,14 +29,14 @@
     </script>
 @endif
 @if(!isset($fromOtherView))
-    <div class="col-md-6 back-white res-main-cont">
+    <div class="back-white res-main-cont">
        {{-- <div class="download-container" id="downladContainerOverlay">
             <a href="/pdf-download" class="download-button"><i class="fa fa-download"></i> Telecharger en pdf</a>
         </div>--}}
     @endif
     @if(!isset($downloading)&& !isset($fromOtherView))
         <div class="row-center">
-            <img src="../img/logo.jpg" class="img-responsive logo-style-doc">
+            <img src="../img/logo.png" class="img-responsive logo-style-doc">
         </div>
     @endif
     @if(isset($fromOtherView))

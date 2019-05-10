@@ -72,7 +72,7 @@ class HomeController extends Controller
     }
 
     public function changeTemplate($id) {
-        if(intval($id) > 0 && intval($id) <= 4) {
+        if(intval($id) > 0 && intval($id) <= 5) {
             Settings::first()->update([
                 'template' => $id
             ]);

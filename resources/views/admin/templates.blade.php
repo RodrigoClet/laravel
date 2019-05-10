@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 @section('content')
+<!-- <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css"> -->
     <div class="container-search">
         <!-- SEARCH INPUT -->
         <div class="row">
@@ -32,7 +33,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col grid-margin">
-                                <h5>Template 1</h5>
+                                <h5>Template {{ $settings->template }}</h5>
                             </div>
                             <div class="col text-right grid-margin">
                                 <span class="badge badge-sm badge-pill badge-theme-lime-03">Technique</span>
@@ -41,20 +42,19 @@
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <img src="{{ URL::asset('img/template.png') }}" alt="template" />
+                                <img src="/img/template{{ $settings->template }}.jpg" class="template-img" alt="template" />
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row mt-3">
                     <div class="col">
-                        <button class="btn btn-violet btn-rounded-2x btn-sm btn-block text-13" type="button">Voir un profil test</button>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-grey btn-rounded-2x btn-sm btn-block text-13" type="button">Voir un profil test</button>
+                        <button class="btn btn-violet btn-rounded-2x btn-sm btn-block text-13" type="button" data-toggle="modal" data-target="#template">Changer Template</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+@include('admin.modals.change-template')

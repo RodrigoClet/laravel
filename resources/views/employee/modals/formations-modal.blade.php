@@ -2,9 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="close float-right">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @if(isset($edit)) onclick="location.href='/{{  Auth::user()->role() }}/formations'" @endif><span aria-hidden="true">&times;</span></button>
                 <div class="profile-sec">
                     <p class="profile-title">Ajouter une formation</p>
                 </div>

@@ -6,11 +6,11 @@
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="modal-header">
-                <h4 class="modal-title blue-title">Etes vous sure de vouloir changer le template?</h4>
+                <h4 class="modal-title red-title">Etes vous sure de vouloir changer le template?</h4>
             </div>
             <div class="modal-footer">
-                <button class="formBtn" type="submit" onclick="location.href = '/admin/changeTemplate/' + template">Oui</button>
-                <button type="button" class="formBtn but-white" data-dismiss="modal">Annuler</button>
+                <button class="red-button" type="submit" onclick="location.href = '/admin/changeTemplate/' + template">Oui</button>
+                <button type="button" class="red-button red-bt-bor" data-dismiss="modal">Annuler</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -25,7 +25,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    @for($i = 1; $i <= 4; $i++)
+                    @for($i = 1; $i <= 5; $i++)
                         <div class="col-md-3">
                             <div class="wraper">
                                 <div class="wrapper-img">
@@ -61,8 +61,6 @@
             <div class="display-form">
                 <a class="Btnform" onclick="change_template(this);" data-template="">Utiliser ce template</a>
             </div>
-
         </div>
-
     </div>
 </div>

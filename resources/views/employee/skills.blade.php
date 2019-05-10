@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col grid-margin">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control input-shadow input-rounded search-active" placeholder="Rechercher un profil">
+                        <input type="text" class="form-control input-shadow input-rounded search-active" placeholder="Rechercher une compétence">
                     </div>
                 </div>
             </div>
