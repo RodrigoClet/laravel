@@ -22,6 +22,7 @@
 
         <!-- plugins:js -->
         <script src="{{ URL::asset('vendors/js/vendor.bundle.base.js') }}"></script>
+        <script src="{{ URL::asset('js/app.js') }}"></script>
         <script src="{{ URL::asset('js/filter.js') }}"></script>
         <!-- endinject -->
         @yield('scripts')
