@@ -23,6 +23,7 @@
         background: white;
     }
 </style>
+
 @if(!isset($downloading) && !isset($fromOtherView))
     <script>
         var skillsVar = [{{ implode(',', $userSkills) }}];

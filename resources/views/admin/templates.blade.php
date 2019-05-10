@@ -1,6 +1,5 @@
 @extends('admin.layouts.app')
 @section('content')
-<!-- <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css"> -->
     <div class="container-search">
         <!-- SEARCH INPUT -->
         <div class="row">

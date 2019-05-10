@@ -1,6 +1,7 @@
 <script>
     var skillsVar = [{{ implode(',', $userSkills) }}];
 </script>
+
 @extends('employee.layouts.app')
 @section('content')
     <div class="row">

@@ -3,6 +3,7 @@
         var skillsVar = [{{ implode(',', $userSkills) }}];
     </script>
 @endif
+
 <style type="text/css">
     .resume-2-container {
         padding-top: 70px;

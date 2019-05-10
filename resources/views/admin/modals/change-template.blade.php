@@ -1,6 +1,7 @@
 <script>
     var template = {{ $settings->template }};
 </script>
+
 <div class="modal fade" id="changerTemplate" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

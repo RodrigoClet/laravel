@@ -3,6 +3,7 @@
         var skillsVar = [{{ implode(',', $userSkills) }}];
     </script>
 @endif
+
 <style type="text/css">
     .headline-1 {
         color: #000000;
