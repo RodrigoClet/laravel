@@ -214,9 +214,9 @@
 </style>
 @if(!isset($fromOtherView))
     <div class="back-white res-main-cont">
-       {{-- <div class="download-container" id="downladContainerOverlay">
+        <div class="download-container" id="downladContainerOverlay">
             <a href="/pdf-download" class="download-button"><i class="fa fa-download"></i> Telecharger en pdf</a>
-        </div>--}}
+        </div>
     @endif
         <div class="row-center resume2-top-img" style="text-align: center">
             <img src="{{ !isset($downloading) ?  url('/img/resume2-top-img.jpg') : base_path() . '/public/img/resume2-top-img.jpg' }}" class="top-add-image">
